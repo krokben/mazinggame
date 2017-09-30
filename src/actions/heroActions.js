@@ -5,9 +5,9 @@ const heroActions = {
 			position
 		}
 	},
-	changeColor(color) {
+	changeHeroColor(color) {
 		return {
-			type: 'CHANGE_COLOR',
+			type: 'CHANGE_HERO_COLOR',
 			color
 		}
 	}

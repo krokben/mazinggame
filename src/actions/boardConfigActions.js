@@ -1,4 +1,4 @@
-const gameActions = {
+const boardConfigActions = {
 	setScore(score) {
 		return {
 			type: 'SET_SCORE',
@@ -13,4 +13,4 @@ const gameActions = {
 	}
 };
 
-export default gameActions;
+export default boardConfigActions;

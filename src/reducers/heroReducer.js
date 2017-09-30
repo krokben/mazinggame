@@ -5,7 +5,7 @@ export default function heroReducer(hero = {}, action) {
 				...hero,
 				position: action.position
 			};
-		case 'CHANGE_COLOR':
+		case 'CHANGE_HERO_COLOR':
 			return {
 				...hero,
 				color: action.color

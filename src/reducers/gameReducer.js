@@ -5,6 +5,11 @@ export default function gameReducer(game = {}, action) {
 				...game,
 				score: action.score
 			};
+		case 'SET_CURRENT':
+			return {
+				...game,
+				current: action.current
+			};
 		default:
 			return game;
 	}
