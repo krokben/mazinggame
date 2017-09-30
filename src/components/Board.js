@@ -4,11 +4,15 @@ import Tile from './Tile';
 export default class Board extends Component {
 	render() {
 		const style = {
-			width: '320px'
+			width: '320px',
+			margin: 'auto',
+			fontFamily: 'Arial',
+			textAlign: 'right'
 		};
 
 		return (
 			<div style={style}>
+				<div><h1>{this.props.game.score} / {this.props.game.levels[this.props.game.activeLevel].maxScore}</h1></div>
 				{
 					this.props.boards[this.props.game.current].map((tile, i) => {
 						return (

@@ -18,7 +18,6 @@ class App extends Component {
           heroActions={this.props.heroActions}
           boardsActions={this.props.boardsActions}
         />
-        <h1>{this.props.game.score}</h1>
       </div>
     );
   }

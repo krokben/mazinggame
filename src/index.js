@@ -8,7 +8,15 @@ import { Provider } from 'react-redux';
 const initialState = {
 	game: {
 		current: 0,
-		score: 0
+		score: 0,
+		activeLevel: 0,
+		levels: [
+			{
+				maxScore: 11,
+				winner: '#16a085',
+				colors: ['#1abc9c', '#16a085']
+			}
+		]
 	},
 	boards: [
 		[
