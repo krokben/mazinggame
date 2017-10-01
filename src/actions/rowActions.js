@@ -1,14 +1,14 @@
 const rowActions = {
+	setPositions(payload) {
+		return {
+			type: 'SET_POSITIONS',
+			payload
+		}
+	},
 	setPosition(payload) {
 		return {
 			type: 'SET_POSITION',
 			payload
-		}
-	},
-	setClickable(position) {
-		return {
-			type: 'SET_CLICKABLE',
-			position
 		}
 	},
 	changeTileColor(payload) {

@@ -7,6 +7,6 @@ const finalCreateStore = compose(
 	applyMiddleware(thunk, createLogger())
 )(createStore);
 
-export default function configureStore(initialState = {game: {}, hero: {}, boardConfig: {}, rows: [], columns: []}) {
+export default function configureStore(initialState = {game: {}, hero: {}, board: [], boardConfig: {}, rows: [], columns: []}) {
 	return finalCreateStore(rootReducer, initialState);
 }
